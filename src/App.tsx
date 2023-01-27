@@ -1,14 +1,17 @@
 import React from 'react';
-import './App.css';
-import Calendar from './Calendar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HomePage, AnimalPage, AddAnimalPage, EditAnimalsPage } from './components/pages';
 
-
-function App() {
+const App: React.FC = () => {
   return (
-    <div>
-      <h1>LAS Calendar</h1>
-      <Calendar />
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path="/" component={<HomePage/>} />
+        <Route path="/animals" component={<AnimalPage/>} />
+        <Route path="/add-animals" component={<AddAnimalPage/>} />
+        <Route path="/edit-animals/:id" component={<EditAnimalsPage/>} />
+      </Routes>
+    </Router>
   );
 }
 
