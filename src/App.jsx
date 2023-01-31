@@ -1,16 +1,9 @@
-import "./App.css";
-import Home from "./Components/Home";
-import About from "./Components/About";
-import Calendar from "./Components/Calendar";
-import Contact from "./Components/Contact";
+import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Home />
-      <About />
-      <Calendar />
-      <Contact />
+      <h1> Hello</h1>
     </div>
   );
 }
