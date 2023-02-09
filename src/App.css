@@ -1,5 +1,5 @@
 .App{
-  background-color: black;
+  background-color: rgba(128, 0, 0, 0.767);
 }
 
 .container {
@@ -35,4 +35,49 @@ p {
   color: #fff;
   font-size: 18px;
   cursor: pointer;
+}
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: aqua;
+}
+
+.calendar {
+  width: 80%;
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.calendar th {
+  background-color: white;
+  border: 1px solid teal;
+  padding: 10px;
+}
+
+.calendar td {
+  border: 1px solid white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.calendar-day {
+  background-color: #ffffff;
+}
+
+.calendar-day:hover {
+  background-color: #dddddd;
+}
+
+.selected {
+  background-color: #3399ff;
+  color: #ffffff;
+}
+
+.selected-date-container {
+  margin-top: 20px;
+  text-align: center;
 }
