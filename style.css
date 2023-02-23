@@ -1,5 +1,4 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -44,32 +43,121 @@ nav ul li a
     text-decoration: none;
     font-size: 20px;
     color: palevioletred;
-    font-family: sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 nav ul li button
 {
     font-size: 20px;
-    color: white;
+    color: palevioletred;
     outline: none;
     border: none;
     background: transparent;
     cursor: pointer;
-    font-family: sans-serif;
+    font-family: 'Tangerine';
 }
 nav ul li button:hover
 {
-    color: aqua;
+    color: teal;
 }
 nav ul li a:hover
 {
-    color: aqua;
+    color: teal;
 }
-a
-{
-    text-decoration: none;
-    color: palevioletred;
-    font-size: 28px;
+h1 {
+	color: #333;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 3rem;
+	font-weight: 100;
+	line-height: 1.5;
+	text-transform: uppercase;
+	white-space: nowrap;
+	overflow: hidden;
+	position: relative;
+	width: 550px;
+  }
+  h1 span {
+	font-size: 35px;
+	margin-left: 40px;
+  }
+.message {
+	background-color: teal;
+	color: #333;
+	display: block;
+	font-weight: 900;
+	overflow: hidden;
+	position: absolute;
+	padding-left: 0.5rem;
+	top: 0.2rem;
+	left: 270px;
+	animation: openclose 5s ease-in-out infinite;
 }
+.word1, .word2 {
+	font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  @keyframes openclose {
+	0% {
+	  top: 0.2rem;
+	  width: 0;
+	}
+	5% {
+	  width: 0;
+	}
+	15% {
+	  width: 230px;
+	}
+	30% {
+	  top: 0.2rem;
+	  width: 230px;
+	}
+	33% {
+	  top: 0.2rem;
+	  width: 0;
+	}
+	35% {
+	  top: 0.2rem;
+	  width: 0;
+	}
+	38% {
+	  top: -4.5rem;
+	  
+	}
+	48% {
+	  top: -4.5rem;
+	  width: 190px;
+	}
+	62% {
+	  top: -4.5rem;
+	  width: 190px;
+	}
+	66% {
+	  top: -4.5rem;
+	  width: 0;
+	  text-indent: 0;
+	}
+	71% {
+	  top: -9rem;
+	  width: 0;
+	  text-indent: 5px;
+	}
+	86% {
+	  top: -9rem;
+	  width: 285px;
+	}
+	95% {
+	  top: -9rem;
+	  width: 285px;
+	}
+	98% {
+	  top: -9rem;
+	  width: 0;
+	  text-indent: 5px;
+	}
+	100% {
+	  top: 0;
+	  width: 0;
+	  text-indent: 0;
+	}
+  }
 #login-form
 {
     display: none;
@@ -153,13 +241,6 @@ a
 .check-box
 {
 	margin: 30px 10px 34px 0;
-}
-span
-{
-	color:#777;
-	font-size:12px;
-	bottom:68px;
-	position:absolute;
 }
 #login
 {
